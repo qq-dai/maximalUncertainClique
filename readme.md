@@ -15,7 +15,7 @@ To execute the code, you need to run the following executable files, which accep
 
 - "-r": The right size constraint.
 
-- "-k": the value of k for k-plex, 
+- "-k": the value of k for k-plex. 
 
 - "-d": Selceted from 'two' or 'core'.
 
