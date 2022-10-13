@@ -1,10 +1,5 @@
-# Contents
-This repository contains implementations of algorithms for maximal clique enumeration on uncertain graphs, appeared in:
-
-*SIGMOD2022* - Fast Maximal Clique Enumeration on Uncertain Graphs: A Pivot-based Approach 
-
 # Compile
-using cmake to compile the source files. For instances,
+Using cmake to compile the source files. For instances,
 ```
 cd biclique
 cmake .
@@ -12,15 +7,18 @@ make
 ```
 
 # Usage
-To execute the code, you need to run the following executable file:
+To execute the code, you need to run the following executable files, which accept the following optional parameters:
+
+- "-l": The left size constraint.
+
+- "-r": The right size constraint.
+
+- "-k": the value of k for k-plex, 
+
+- "-d": Selceted from 'two' or 'core'.
+
+An running example:
 
 ```
-./uclique [filepath] -a=[1,2] -k=[0,n] -e=[0,1]
+./biclique/bin/MBC [filepath] -a=[1,2] -k=[0,n] -e=[0,1]
 ```
-
-This executable accepts the following optional parameters:
-- "-a=": This is the executed algorithm, "-a=1" for pivot algorithm with topCore reduction and "-a=2" for pivot algorithm with topTriangle reduction.
-
-- "-k=": This is the minsize constraint.
-
-- "-e=": This is the clique probability constraint.
