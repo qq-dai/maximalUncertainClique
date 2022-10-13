@@ -9,6 +9,8 @@ make
 # Usage
 To execute the code, you need to run the following executable files, which accept the following optional parameters:
 
+- "-f": the running bipartite graph.
+
 - "-l": The left size constraint.
 
 - "-r": The right size constraint.
@@ -20,5 +22,5 @@ To execute the code, you need to run the following executable files, which accep
 An running example:
 
 ```
-./biclique/bin/MBC [filepath] -a=[1,2] -k=[0,n] -e=[0,1]
+./biclique/bin/MBC -f data/ -d core
 ```
