@@ -1,26 +1,7 @@
 # Compile
-Using cmake files to compile the source files. For instance,
-```
-cd biclique
-cmake .
-make
-```
-
+  make
 # Usage
-To execute the code, you need to run the following executable files, which accept the following optional parameters:
-
-- "-f": the running bipartite graph.
-
-- "-l": The left size constraint.
-
-- "-r": The right size constraint.
-
-- "-k": the value of k for k-plex. 
-
-- "-d": Selceted from 'two' or 'core'.
-
-An running example:
-
-```
-./biclique/bin/MBC -f data/ -d core
-```
+  ./uclique [filepath] -a=1|2 -k=[0,n] -e=[0,1]
+  "-a=" is the executed algorithm, where "-a=1" for pivot algorithm with topCore reduction and "-a=2" for pivot algorithm with topTriangle reduction.
+  "-k=" is the minsize constraint.
+  "-e=" is the clique probability constraint.
