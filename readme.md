@@ -1,5 +1,5 @@
 # Compile
-Using cmake to compile the source files. For instances,
+Using cmake files to compile the source files. For instance,
 ```
 cd biclique
 cmake .
