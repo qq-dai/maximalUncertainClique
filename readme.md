@@ -4,8 +4,10 @@ This repository contains implementations of algorithms for maximal clique enumer
 *SIGMOD2022* - Fast Maximal Clique Enumeration on Uncertain Graphs: A Pivot-based Approach 
 
 # Compile
-
+using cmake to compile the source files. For instances,
 ```
+cd biclique
+cmake .
 make
 ```
 
